@@ -1,0 +1,181 @@
+
+.dashboardText {
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+#chartdiv {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .creditScore{
+      color:#29bd78;
+  }
+  .lowCredit{
+    color:#bd2929;
+}
+.medCredit{
+    color:#bd9629;
+}
+
+.highCredit{
+    color:#29bd78;
+}
+
+.creditSubHead{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.questionWrapper{
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.welcomeSection{
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+}
+
+.questionTitle, .dashboardText, .academyTitle, .serviceTitle{
+    color:#17293f;
+}
+
+.academyWrapper{
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+    width: 50%;
+
+}
+.academyCenter, .questionCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.serviceWrapper{
+    height: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+}
+
+.serviceWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.serviceCenter{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 140rem;
+    flex-direction: column;
+}
+
+.serviceCenter2{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 70rem;
+  flex-direction: column;
+}
+
+.twotime{
+  margin-left: .9rem;
+}
+.serviceWrapper2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.serviceItem{
+    height: 10rem;
+    margin-top: 2rem;
+    text-align: left;
+    box-shadow: 0 0 10pt 0.5pt #00000010;
+    transition: 200ms ease all ;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.serviceItem:hover{
+    height: 10rem;
+    margin-top: 2rem;
+    text-align: left;
+    box-shadow: 0 0 10pt 0.5pt #00000020;
+}
+
+.serviceItemColor1, .serviceItemColor2, .serviceItemColor3, .serviceItemColor4, .serviceItemColor5{
+    color: #17293f;
+}
+
+.serviceItemBtn1{
+    width: 8rem;
+    height: 2rem;
+    border-radius: .2rem;
+    color:#29bd78
+}
+
+.serviceItemBtn4, .serviceItemBtn3{
+    width: 8rem;
+    height: 2rem;
+    border-radius: .2rem;
+    color:white;
+    background-color: #29bd78;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.serviceItemBtn2{
+    width: 8rem;
+    height: 2rem;
+    border-radius: .2rem;
+    color:white;
+    background: #2958bd;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.serviceItemBtn6{
+    width: 8rem;
+    height: 2rem;
+    border-radius: .2rem;
+    color:white;
+    background: #e77d4c;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.serviceText{
+    color:#2b3e55
+}
+
+.serviceItemBtn2, .serviceItemBtn3, .serviceItemBtn4, .serviceItemBtn6, .serviceItemBtn1{
+    
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.landing{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin-bottom:2rem;
+    align-items: center;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.btnRow{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-left: -3.5rem;
+    margin-top: 2rem;
+}
+.landingText{
+    padding-left: 20rem;
+}
+
+.landingTitle{
+    color: #29bd78;
+    font-weight: 400;
+    font-size: 6rem;
+}
+
+.landingSub{
+    color:#1f6646;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+.landingUnder{
+    height:7rem;
+    min-height: 7rem;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+}
+
+.landingUnderText{
+    padding-left: 20rem;
+    color:rgba(17, 17, 17, 0.534)
+}
+
+.boob{
+    color:white!important
+}
+
+.homeAbout{
+    height: 0rem;
+}
+
+.landingImage{
+    width: 28rem;
+    margin-right: 15rem;
+    margin-top: -8rem;
+}
+
+.btnSize{
+    width: 10rem!important;
+}
+
+.landingSubs{
+    margin-top: 2em;
+    color: #bbbbbb;
+}
+
+.two{
+    background-color: #fff!important;
+    color: #29bd78;
+    box-shadow: none;
+    border: 1px solid #ffffff;
+}
+.two:hover{
+    background-color: #fff!important;
+    color: #29bd78;
+    box-shadow: none;
+    border: 1px solid #29bd78;
+}
+
+.homeAbout{
+    height: 40rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/photos/young-man-with-bad-habbit-guy-is-sitting-in-front-of-computer-and-at-picture-id1227293535'), linear-gradient(0deg, rgba(0, 0, 0, 0.7 ), rgba(0, 0, 0, 0.7));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 1rem;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+
+.aboutWrapper{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutSpace{
+    width: 33rem;
+}
+
+.aboutTitle{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.aboutInfo{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.buttonWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.aboutBtn{
+    width: 20rem;
+    margin-top: 1rem;
+    height: 4rem;
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+}
+
+.aboutBtnPosition{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

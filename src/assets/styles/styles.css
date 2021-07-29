@@ -1,0 +1,27 @@
+.textColor{
+    color:#4193ff!important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+#greenButton{
+    background-color: #4193ff!important;
+}
+
+#greenButton:hover{
+    background-color: #2f72c9!important;
+    box-shadow: none!important;
+}
+.linkHover:hover{
+    color: #189966!important;
+}
+
+.container{
+    text-align: center;
+}
+
+.checkbox{
+    color:#08C177!important
+}
+
+*{
+    font-family: 'Roboto', 'sans-serif';
+}

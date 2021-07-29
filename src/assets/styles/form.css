@@ -1,0 +1,120 @@
+.form {
+    box-shadow: 0 0 4pt 0.5pt #00000034;
+    text-align: center;
+    width: 40rem;
+    padding-top: 2rem;
+    transition: 200ms ease all;
+    background: rgb(255, 255, 255);
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.form:hover {
+    box-shadow: 0 0 4pt 0.5pt rgba(0, 0, 0, 0.26);
+}
+
+.container{
+    margin-top: 6rem;
+}
+
+.btn{
+    background-color: #29bd78!important;
+    font-weight: 600;
+    text-transform: capitalize!important;
+}
+
+.btn:hover{
+    background-color: #1f6646!important;
+    font-weight: 600;
+    text-transform: capitalize!important;
+}
+
+.formLine{
+    border-left: #1f6646 1px solid;
+    margin-top: 6rem;
+}
+.bottomForm{
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+}
+
+.btnCool{
+    background-color: white!important;
+    border:#29bd78 1px solid;
+    color:#29bd78;
+}
+
+
+.btnCool:hover{
+    border:#1f6646 1px solid!important;
+    color:#1f6646!important;
+    background-color: white!important;
+}
+
+.itemSpace{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.item{
+    color:#3f3f3f;
+    transition: 200ms ease all;
+}
+
+.item:hover{
+    color:#29bd78;
+    transition: 200ms ease all;
+}
+
+.formTitle{
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.center{
+    text-align: center;
+    padding-top: 6rem;
+}
+input[type="password"]:hover{
+    border-bottom:1px solid #29bd78!important;
+}
+
+input[type="email"]:hover{
+    border-bottom:1px solid #29bd78!important;
+}
+
+input[type="password"]:focus{
+    color:#123525!important
+}
+
+input[type="email"]:focus{
+    color:#123525!important
+}
+
+.colorText{
+    color: #29bd78!important;
+    font-weight: 600;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -3rem;
+}
+
+.boob{
+    color:white!important
+}
+
+.hover:hover{
+    color:#29bd78;
+}
+
+#thingything{
+    background-color: transparent!important;
+}

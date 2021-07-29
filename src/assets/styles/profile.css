@@ -1,0 +1,65 @@
+.userSection{
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.userImage{
+    border-radius: 50%;
+    height: 8rem;
+    width: 9rem;
+}
+
+.profileBtn{
+    margin-left: 0rem;
+}
+.profileBtn2{
+    margin-left: 1rem;
+}
+.thingythingthing{
+    width: 30rem;
+}
+
+
+.loanSection{
+    width: 100%;
+    display: flex;
+    padding-bottom: 10rem;
+    min-height: 70rem;
+    padding-top: 10rem;
+    justify-content: center;
+}
+
+.loanCenter3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#qweqwe{
+    width: 16rem;
+}
+.serviceItem{
+    min-width: 60rem;
+}
+#nice{
+    padding-bottom: 2rem!important;
+}
+#loanthingythingthingthingthing{
+margin-top: -10rem;
+text-align: center;
+height: 40rem!important;
+}
+.loanCenter{
+    width: 60rem;
+}
+
+.barr{
+    height: 5rem;
+}
+#asdasdasdasdasdasdasd{
+    margin-left: .8rem;
+    margin-top: 1.5rem;
+}
