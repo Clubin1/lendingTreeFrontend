@@ -81,6 +81,7 @@ class Tasks extends React.Component {
     render() {
         const {user} = this.props.auth;
         let userID = this.props.auth.user.id
+
         let removePeople = (e) => {
             var array = [this.state.tasks]; // make a separate copy of the array
             var finalArr = array[0]

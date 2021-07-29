@@ -179,3 +179,78 @@
 .serviceItemBtn2, .serviceItemBtn3, .serviceItemBtn4, .serviceItemBtn6, .serviceItemBtn1{
     
 }
+
+@media(max-width:1155px){
+    .widththing{
+        width: 30rem;
+    }
+    
+    div.serviceItem{
+        width: 10rem;
+        min-width: 10rem;
+    }
+    .serviceItemColor1, .serviceItemColor2, .serviceItemColor3, .serviceItemColor5, .serviceItemColor4{
+        width: 20rem;
+    }
+}
+
+@media(max-width:591px){
+    .academyImage{
+        width: 20rem;
+    }
+
+    .widththing{
+        width: 20rem;
+    }
+    
+    div.serviceItem{
+        width: 10rem;
+        min-width: 10rem;
+    }
+    .serviceItemColor1, .serviceItemColor2, .serviceItemColor3, .serviceItemColor5, .serviceItemColor4{
+        width: 20rem;
+    }
+
+     .academyWrapper{
+        width: 0rem;
+    }
+    .academyTitle{
+        width: 20rem;
+    }
+
+    #btnthing{
+        padding: -10rem!important;
+    }
+    .widththing{
+        width: 20rem;
+    }
+    
+    div.serviceItem{
+        width: 10rem;
+        min-width: 10rem;
+    }
+    .serviceItemColor1, .serviceItemColor2, .serviceItemColor3, .serviceItemColor5, .serviceItemColor4{
+        width: 10rem;
+    }
+}
+
+@media(max-width:430px){
+    .serviceWrapper{
+        width: 100%;
+    }
+
+    .serviceItem{margin-left: -1rem;}
+    .serviceTitle{
+text-align: left;    }
+}
+
+@media(max-width:370px){
+    .serviceWrapper{
+        width: 100%;
+    }
+
+    .serviceItem, .serviceTitle{margin-left: -4rem;}
+    .serviceTitle{
+text-align: left;    }
+}
+

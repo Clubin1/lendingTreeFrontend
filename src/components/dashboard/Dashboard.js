@@ -241,7 +241,7 @@ return (
                             data-aos-offset='100'
                             data-aos-delay='500'
                                 control={<Checkbox className='checkbox'  onChange={e => this.handleClick(e)}id='homeAcc' name="homeAcc" />}
-                                label="Lending Tree Academy"
+                                label="Finance Academy"
                             />
 
 <FormControlLabel
@@ -250,7 +250,7 @@ return (
                             data-aos-offset='100'
                             data-aos-delay='600'
                                 control={<Checkbox className='checkbox'  onChange={e => this.handleClick(e)}id='homeAcc' name="homeAcc" />}
-                                label="Check Credit Score"
+                                label="Credit Score"
                             />
                             </FormGroup>
         </FormControl>
@@ -278,7 +278,7 @@ return (
             data-aos-offset='200'
             className="serviceItem">
                 <h5 className="serviceItemColor1"> Loan requests </h5>
-                <h6 className="serviceText">View your offers</h6>
+                <h6 className="serviceText widththing">View your offers</h6>
                 <div className="serviceItemBtn1">
                 Loan Requests
               </div>
@@ -292,7 +292,7 @@ return (
                         data-aos-delay='50'
             className="serviceItem">
               <h5 className="serviceItemColor2"> Pay off your credit card debt with a loan </h5>
-              <h6 className="serviceText">Get the most accurate savings alerts and cashflow analysis when you link your accounts to LendingTree.</h6>
+              <h6 className="serviceText widththing">Get the most accurate savings alerts and cashflow analysis when you link your accounts to LendingTree.</h6>
               <div className="serviceItemBtn6">
                Save Money
               </div>
@@ -307,7 +307,7 @@ return (
                                     data-aos-delay='100'
             className="serviceItem">
               <h5 className="serviceItemColor3"> Need a new car? We can help </h5>
-              <h6 className="serviceText">Comparison shop our auto loan lenders. Great cars are more affordable than you think.</h6>
+              <h6 className="serviceText widththing">Comparison shop our auto loan lenders. Great cars are more affordable than you think.</h6>
               <div className="serviceItemBtn2">
                 Take a Look
               </div>
@@ -321,7 +321,7 @@ return (
                                                 data-aos-delay='150'
             className="serviceItem">
               <h5 className="serviceItemColor4"> Connect your bank accounts </h5>
-              <h6 className="serviceText">Great score, but you need more available credit. A 0% transfer card may be a smart move.</h6>
+              <h6 className="serviceText widththing">Great score, but you need more available credit. A 0% transfer card may be a smart move.</h6>
               <div className="serviceItemBtn3">
                 Do this
               </div>
@@ -335,7 +335,7 @@ return (
                                                 data-aos-delay='200'
             className="serviceItem">
               <h5 className="serviceItemColor5"> You should increase your available credit </h5>
-              <h6 className="serviceText">Great score, but you need more available credit. A 0% transfer card may be a smart move.</h6>
+              <h6 className="serviceText widththing">Great score, but you need more available credit. A 0% transfer card may be a smart move.</h6>
               <div className="serviceItemBtn4">
                 Credit Alert
               </div>
@@ -350,7 +350,7 @@ return (
         <div className="academyWrapper">
           <h4 
                 data-aos-anchor-easing='ease-in-out'
-                data-aos='fade-left'
+                data-aos='fade'
                 data-aos-offset='100'
                 data-aos-delay='200'
           className="academyTitle">
@@ -360,7 +360,7 @@ return (
           <img
                     alt="lendingTree Academy"
                     data-aos-anchor-easing='ease-in-out'
-                    data-aos='fade-right'
+                    data-aos='fade'
                     data-aos-offset='100'
                     data-aos-delay='300'
           src="https://www.lendingtree.com/content/uploads/2019/03/bouquet-lt-academy.png" className="academyImage">
@@ -370,13 +370,14 @@ return (
             <a href="https://www.lendingtree.com/academy/">
             <button
               style={{
-                width: "32rem",
                 borderRadius: "3px",
                 letterSpacing: "1.5px",
+                paddingLeft:"6rem",
+                paddingRight:"6rem"
               }}
-              id="greenButton"
+              id="greenButton btnthing"
               data-aos-anchor-easing='ease-in-out'
-              data-aos='fade-left'
+              data-aos='fade'
               data-aos-delay='400'
               data-aos-offset='-300'
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
