@@ -93,6 +93,7 @@ class Tasks extends React.Component {
             console.log(user.name,'sa;lkdfjsa;dlkfjs-------')
             const userData = {
                 name: user.name, 
+                emai: user.email,
                 levelExp: user.levelExp++
             }
             this.props.updateUser(userData, userID);        }
