@@ -46,6 +46,7 @@ class Settings extends React.Component {
     componentDidMount() {
         const {user} = this.props.auth
         console.log(user)
+        window.scrollTo(0, 0)
     }
     render() {
         const {user} = this.props.auth;
