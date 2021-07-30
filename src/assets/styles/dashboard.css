@@ -260,7 +260,10 @@
   }
 
   .serviceItem {
-    margin-left: -1rem;
+    margin-left: -6rem;
+  }
+  #penis{
+      margin-left: -5rem;
   }
   .serviceTitle {
     text-align: left;
@@ -273,7 +276,7 @@
   }
 
   .serviceItem {
-    margin-left: -4rem;
+    margin-left: -6rem;
   }
   .serviceTitle{
       margin-left: -3rem;
