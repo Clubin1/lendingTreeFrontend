@@ -17,7 +17,7 @@ class Profile extends React.Component {
         return (
           <div className="profileWrapper">
               <div className="userSection">
-                <h4>View your asdasdasdasd, {user.name.charAt(0).toUpperCase() + user.name.slice(1)}</h4>
+                <h4>View your profile, {user.name.charAt(0).toUpperCase() + user.name.slice(1)}</h4>
                 <div className="userPfpCol">
                     <div className="userButton"></div>
                     <img 
