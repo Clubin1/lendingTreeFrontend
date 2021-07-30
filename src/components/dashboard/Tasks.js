@@ -104,9 +104,9 @@ class Tasks extends React.Component {
             <h4 data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceTitle twotime">
                 Your personal loans
             </h4>
-            <h6 data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime">View your personal loans you're eligible for
+            <h6 id="loanloanloan" data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime">View your personal loans you're eligible for
             </h6>
-            <h6 data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime">Your Wallet: ${user.bankSum}
+            <h6 id="thitnhgitng"data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime">Your Wallet: ${user.bankSum}
             </h6>
             {
             this.state.tasks.map((loan, index) => {
