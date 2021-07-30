@@ -22,7 +22,15 @@ class Profile extends React.Component {
         } else if (user.levelExp <= 10) {
           expImg = <p> level 3 </p>
         }
-        return (
+
+        let pfp
+        let dbURL = user.imageURL
+        if(user.imageURL === ""){
+          pfp = "https://www.guidedogs.org/wp-content/uploads/2019/11/website-donate-mobile.jpg"
+        } else {
+          pfp = dbURL
+        }
+          return (
           <div className="profileWrapper">
               <div className="userSection">
                 <h4>View your profile, {user.name.charAt(0).toUpperCase() + user.name.slice(1)}</h4>
@@ -32,7 +40,7 @@ class Profile extends React.Component {
                     <div className="userButton"></div>
                     <img 
                     alt="profileLogo"
-                    src="https://www.guidedogs.org/wp-content/uploads/2019/11/website-donate-mobile.jpg" className="userImage">
+                    src={pfp} className="userImage">
                     </img>
                 </div>
               </div>

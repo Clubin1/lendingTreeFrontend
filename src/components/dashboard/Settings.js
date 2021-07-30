@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 
-import {updateUser} from "../../actions/authActions";
+import {updateImage} from "../../actions/authActions";
 
 
 import '../../assets/styles/profile.css'
@@ -19,7 +19,11 @@ class Settings extends React.Component {
             bankAccount: "",
             bankSum: "",
             levelExp: "",
-            creditScore: ""
+            creditScore: "",
+            fileInput: "",
+            selectedFile:"",
+            previewSource:"",
+            imageURL: ""
         };
     }
     onChange = e => {
@@ -45,6 +49,57 @@ class Settings extends React.Component {
     }
     render() {
         const {user} = this.props.auth;
+
+        const handleFileInputChange = (e) => {
+            const file = e.target.files[0]
+            previewFile(file);
+            this.setState({selectedFile : file})
+            this.setState({selectedFile : e.target.value})
+        }
+
+        const handleSubmitFile = (e) => {
+            console.log("submitt")
+            e.preventDefault()
+            if(!this.state.previewSource) return
+            uploadImage(this.state.previewSource)
+        }
+
+        const uploadImage = async (base64EncodedImage) => {
+            let userID = this.props.auth.user.id
+            try {
+                await fetch("https://lendingbackend.herokuapp.com/settings/upload/image", {
+                    method: 'POST',
+                    body: JSON.stringify({data: base64EncodedImage}),
+                    headers: {'Content-type': 'application/json'}
+                }).then(async res => 
+                    {
+                        const data = await res.json()
+                        this.setState({imageURL: data.data})
+                    })
+            } catch (error) {
+                console.error(error)
+            }
+            const userData = {
+                imageURL: this.state.imageURL
+            }
+            this.props.updateImage(userData, userID); // since we handle the redirect within our component, we don't need to pass in this.props.history as a parameter
+        }
+
+        const previewFile = (file) => {
+            const reader = new FileReader()
+            reader.readAsDataURL(file)
+            reader.onloadend = () => {
+                const data = reader.result
+                this.setState({previewSource : data})
+            }
+        }
+        let pfp
+        let dbURL = user.imageURL
+        if(user.imageURL === ""){
+          pfp = "https://www.guidedogs.org/wp-content/uploads/2019/11/website-donate-mobile.jpg"
+        } else {
+          pfp = dbURL
+        }
         return (
             <div className="profileWrapper">
                 <div className="userSection">
@@ -53,23 +108,16 @@ class Settings extends React.Component {
                     }</h4>
                     <div className="userPfpCol">
                         <div className="userButton"></div>
-                        <img
-                        alt="profile"
-                        src="https://www.guidedogs.org/wp-content/uploads/2019/11/website-donate-mobile.jpg" className="userImage"></img>
+                        <img 
+                    alt="profileLogo"
+                    src={pfp} className="userImage">
+                    </img>
                     </div>
                     <div className="btnRow">
-                        <button style={
-                                {
-                                    width: "10rem",
-                                    borderRadius: "3px",
-                                    letterSpacing: "1.5px"
-                                }
-                            }
-                            id="greenButton"
+                      <form onSubmit={handleSubmitFile}>
+                        <input type="file" name="image" onChange={handleFileInputChange} value={this.fileInput} className="form-input">
 
-                            className="btn profileBtn btn-large waves-effect waves-light hoverable blue accent-3">
-                            Hi
-                        </button>
+                        </input>
                         <button style={
                                 {
                                     width: "10rem",
@@ -79,10 +127,13 @@ class Settings extends React.Component {
                                 }
                             }
                             id="greenButton"
-
+                            type="submit"
                             className="btn profileBtn2 btn-large waves-effect waves-light hoverable blue accent-3">
-                            Hi
+                            Save
                         </button>
+                      </form>
+
+             
                     </div>
                 </div>
 
@@ -92,9 +143,7 @@ class Settings extends React.Component {
                         }
                         className="row thingythingthing">
                         <form noValidate
-                            onSubmit={
-                                this.onSubmit
-                        }>
+                        >
 
                             <div className="input-field col s12">
                                 <input onChange={
@@ -193,8 +242,8 @@ class Settings extends React.Component {
         )
     }
 } Settings.propTypes = {
-    updateUser: PropTypes.func.isRequired,
+    updateImage: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired
 };
 const mapStateToProps = state => ({auth: state.auth});
-export default connect(mapStateToProps, {updateUser})(Settings);
+export default connect(mapStateToProps, {updateImage})(Settings);
