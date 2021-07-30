@@ -116,7 +116,7 @@ class UserLoans extends React.Component {
                     <h4 data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceTitle twotime">
                         Your personal loans
                     </h4>
-                    <h6 data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime">View your personal loans you're eligible for
+                    <h6 id="superawesome" data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime ">View your personal loans you're eligible for
                     </h6>
               
                     {

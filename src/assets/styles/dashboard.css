@@ -267,7 +267,7 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 400px) {
   .serviceWrapper {
     width: 100%;
   }
@@ -278,7 +278,17 @@
   .serviceTitle{
       margin-left: -3rem;
   }
-  .serviceTitle {
+  #superawesome{
+      margin-left: -3rem!important;
+  }
+  .serviceText{
+    margin-left: -3rem;
+
+  }
+  h6.serviceText{
+    margin-left: 0rem;
+  }
+  .serviceTitle, .serviceText {
     text-align: left;
   }
 }
