@@ -348,10 +348,16 @@
     .helpss{
         margin-left: -4rem;
     }
+    #nasds{
+        margin-left: -2rem!important;
+    }
 }
 
 @media(max-width:400px){
-    .helpss{
-        margin-left: 0rem;
+    #asdasdasdasd{
+        margin-left: 1rem;
+    }
+    #g{
+        margin-left: 1rem;
     }
 }

@@ -92,11 +92,14 @@ class SearchLoans extends React.Component {
         return (
             <div className="loanSection">
                 <div className="loanCenter">
-                    <h4 data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceTitle twotime">
+                   <div className="helpssss">
+                   <h4 id="asdasdasdasd" data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceTitle twotime">
                         Use our loan search engine
                     </h4>
-                    <h6 data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime">Look at all the loans we have to offer
+                    <h6 id="g" data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime">Look at all the loans we have to offer
                     </h6>
+                    </div>
+
                     <div
                     id="asdasdasdasdasdasdasd"
                     data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="input-field ">
@@ -109,7 +112,7 @@ class SearchLoans extends React.Component {
                         return (
                             <div className="as">
                                 <div key={index}>
-                                    <div data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' data-aos-delay='100' className="serviceItem"
+                                    <div id="nasds" data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' data-aos-delay='100' className="serviceItem"
                                         key={
                                             index + 1
                                     }>
