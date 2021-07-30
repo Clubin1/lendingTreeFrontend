@@ -279,7 +279,7 @@
       margin-left: -3rem;
   }
   #superawesome{
-      margin-left: -3rem!important;
+      margin-left: -0rem!important;
   }
   #loanloanloan{
       margin-left: -3em!important;
@@ -292,6 +292,13 @@
   #qweqwe{
     margin-left: 0rem!important;
   }
+
+  h4#loler{
+      margin-left: -3rem!important;
+  }
+  h6#superawesome{
+      margin-left: -3rem!important;
+  }
   .serviceText{
     margin-left: -3rem;
 
@@ -302,4 +309,28 @@
   .serviceTitle, .serviceText {
     text-align: left;
   }
+  
+}
+
+
+
+@media (max-width:429px) {
+    #superawesome{
+        margin-left: 0rem!important;
+    }
+    #loler{
+        margin-left: 0rem!important;
+    }
+}
+@media (max-width:450px) {
+    h4.questionTitle{
+        width: 20rem;
+    }
+    h4.serviceTitle{
+        width: 20rem;
+    }
+
+    h5.serviceItemColor2,h5.serviceItemColor5, h5.serviceItem{
+        width: 17rem;
+    } 
 }
