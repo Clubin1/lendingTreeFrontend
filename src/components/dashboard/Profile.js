@@ -44,8 +44,11 @@ class Profile extends React.Component {
                     alt="profileLogo"
                     src={pfp} className="userImage">
                     </img>
+
+
                 </div>
-                
+                <a href="/user/settings">Change Settings</a>
+
               </div>
           </div>
         )
