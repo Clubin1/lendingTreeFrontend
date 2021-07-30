@@ -68,6 +68,11 @@ class Tasks extends React.Component {
                     interestRate: 4000
 
                 }
+            ],
+            level: [
+                {
+                    levelExp: ""
+                }
             ]
         }
     }
@@ -97,7 +102,8 @@ class Tasks extends React.Component {
                 levelExp: user.levelExp++
             }
             console.log(userData)
-            this.props.updateTask(userData, userID);        }
+            this.props.updateTask(userData, userID)
+        }
       return(
         <div className="loanSection">
         <div className="loanCenter3">
