@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 
 import '../../assets/styles/profile.css'
 import '../../assets/styles/dashboard.css'
-import {updateUser} from "../../actions/authActions";
+import {updateTask} from "../../actions/authActions";
 
 
 import AOS from 'aos'
@@ -91,13 +91,13 @@ class Tasks extends React.Component {
                 finalArr.splice(index, 1)
                 this.setState({task: array})
             }
-            console.log(user.name,'sa;lkdfjsa;dlkfjs-------')
+            console.log(user.email,'sa;dlkfjs-------')
+            console.log(user.levelExp)
             const userData = {
-                name: user.name, 
-                emai: user.email,
                 levelExp: user.levelExp++
             }
-            this.props.updateUser(userData, userID);        }
+            console.log(userData)
+            this.props.updateTask(userData, userID);        }
       return(
         <div className="loanSection">
         <div className="loanCenter3">
@@ -155,4 +155,4 @@ class Tasks extends React.Component {
     auth: PropTypes.object.isRequired
 };
 const mapStateToProps = state => ({auth: state.auth});
-export default connect(mapStateToProps, {updateUser})(Tasks);
+export default connect(mapStateToProps, {updateTask})(Tasks);

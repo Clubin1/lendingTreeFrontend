@@ -55,6 +55,19 @@ export const updateUser = (userData, userID) => dispatch => {
     })
   )
 }
+// Update user
+export const updateTask = (userData, userID) => dispatch => {
+  axios.post(`https://lendingbackend.herokuapp.com/api/users/tasks/${userID}`, userData)
+  .then(res => {
+    console.log("user updated")
+  })
+  .catch(err =>
+    dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data
+    })
+  )
+}
 // Set logged in user
 export const setCurrentUser = decoded => {
   return {
