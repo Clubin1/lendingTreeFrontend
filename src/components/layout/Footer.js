@@ -42,13 +42,14 @@ class Footer extends Component {
                                 <h3>Links & Services</h3>
                             </div>
                             <ul className="footerList">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/development/website">Website Development</a></li>
-                                <li><a href="/works">Past Websites</a></li>
-                                <li><a href="/development/software">Software Development</a></li>
-                                <li><a href="/works">Past Logos</a></li>
-                                <li><a href="/development/logo">Logo Design</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="/dashboard">Dashboard</a></li>
+                                <li><a href="/login">Login</a></li>
+                                <li><a href="/register">Register</a></li>
+                                <li><a href="/user/loans">Your Loans</a></li>
+                                <li><a href="/user/insurance">Insurance</a></li>
+                                <li><a href="/user/loans/search">Loan Search Engine</a></li>
+                                <li><a href="/user/tasks">Tasks</a></li>
+
 
                             </ul>
                         </div>

@@ -67,7 +67,37 @@ class Tasks extends React.Component {
                     loanType: "Car Loan",
                     interestRate: 4000
 
-                }
+                },
+                {
+                    loanName: "Task Eleven",
+                    loanType: "Home Loan",
+                    interestRate: 1000
+
+                },
+                {
+                    loanName: "Task Twelve",
+                    loanType: "Home Loan",
+                    interestRate: 6000
+
+                },
+                {
+                    loanName: "Task Thirteen",
+                    loanType: "Home Loan",
+                    interestRate: 3000
+
+                },
+                {
+                    loanName: "Task Fourteen",
+                    loanType: "Home Loan",
+                    interestRate:3000
+
+                },               {
+                    loanName: "Task Fifthteen",
+                    loanType: "Home Loan",
+                    interestRate: 8000
+                },
+                
+                
             ],
             level: [
                 {
@@ -96,12 +126,11 @@ class Tasks extends React.Component {
                 finalArr.splice(index, 1)
                 this.setState({task: array})
             }
-            console.log(user.email,'sa;dlkfjs-------')
-            console.log(user.levelExp)
+
             const userData = {
                 levelExp: user.levelExp++
             }
-            console.log(userData)
+
             this.props.updateTask(userData, userID)
         }
       return(

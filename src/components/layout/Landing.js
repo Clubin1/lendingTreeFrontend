@@ -6,7 +6,7 @@ class Landing extends Component {
       <div className="container">
         <img className='lendingTreeLogo' src='https://upload.wikimedia.org/wikipedia/en/f/f0/LT_Logo_-_Gradient.png' alt='lending tree'></img>
         <div className="landing">
-          <h1>asd</h1>
+          <h1>APP</h1>
         </div>
        </div>
     );
