@@ -101,6 +101,8 @@ class Tasks extends React.Component {
       return(
         <div className="loanSection">
         <div className="loanCenter3">
+        <div className="helpss">
+
             <h4 data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceTitle twotime">
                 Your personal loans
             </h4>
@@ -108,6 +110,7 @@ class Tasks extends React.Component {
             </h6>
             <h6 id="thitnhgitng"data-aos-anchor-easing='ease-in-out' data-aos='fade-up' data-aos-offset='200' className="serviceText twotime">Your Wallet: ${user.bankSum}
             </h6>
+            </div>
             {
             this.state.tasks.map((loan, index) => {
                 return (

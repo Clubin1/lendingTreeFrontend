@@ -297,10 +297,10 @@
   }
 
   h4#loler{
-      margin-left: -3rem!important;
+      margin-left: 0rem!important;
   }
   h6#superawesome{
-      margin-left: -3rem!important;
+      margin-left: 0rem!important;
   }
   .serviceText{
     margin-left: -3rem;
@@ -336,4 +336,22 @@
     h5.serviceItemColor2,h5.serviceItemColor5, h5.serviceItem{
         width: 17rem;
     } 
+}
+
+@media(max-width:431px){
+    .as{
+        margin-left: 2rem;
+    }
+    .help{
+        margin-left: -3rem;
+    }
+    .helpss{
+        margin-left: -4rem;
+    }
+}
+
+@media(max-width:400px){
+    .helpss{
+        margin-left: 0rem;
+    }
 }
