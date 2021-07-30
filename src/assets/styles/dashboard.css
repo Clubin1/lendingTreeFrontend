@@ -364,3 +364,31 @@
         margin-left: 0rem;
     }
 }
+
+@media(max-width:1154px){
+    .ggg{
+        width: 30rem!important;
+    }
+}
+
+@media(max-width:590px){
+    .ggg{
+        width: 20rem!important;
+    }
+}
+
+@media(max-width:430px){
+    #twooo{
+        margin-left: -6rem!important;
+    }
+}
+
+@media(max-width:400px){
+    .sdfsdfsdfsdf{
+        margin-left: 1rem!important;
+    }
+
+    .asdasdasdasdsad{
+        margin-left: 1rem!important;
+    }
+}
