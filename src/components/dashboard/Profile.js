@@ -14,10 +14,20 @@ class Profile extends React.Component {
     render() {
         const { user } = this.props.auth;
         console.log(user)
+        let expImg
+        if(user.levelExp <= 3) {
+          expImg = <p> level 1 </p>
+        } else if (user.levelExp <= 5) {
+          expImg = <p> level 2 </p>
+        } else if (user.levelExp <= 10) {
+          expImg = <p> level 3 </p>
+        }
         return (
           <div className="profileWrapper">
               <div className="userSection">
                 <h4>View your profile, {user.name.charAt(0).toUpperCase() + user.name.slice(1)}</h4>
+                <h4>Account Level: {user.levelExp}</h4>
+                {expImg}
                 <div className="userPfpCol">
                     <div className="userButton"></div>
                     <img 
